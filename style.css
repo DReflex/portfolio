@@ -1,0 +1,197 @@
+font-family: 'Source Sans Pro', sans-serif;
+
+body{
+  margin:0px !important;
+}
+#show{
+  text-align: center;
+  color:rgb(197, 249, 254);
+  font-family: 'Oswald', sans-serif;
+}
+.name{
+  color: rgb(250, 202, 0);
+  font-size: 16px;
+}
+.nav-flex{
+  margin: auto;
+  padding:0px;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  background:rgb(64, 86, 105);
+}
+.nav-flex img{
+ width: 50px;
+ height: 50px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-left: 30px;
+  float: left;
+}
+.content{
+  margin-right: 5%;
+  padding:20px 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.home{
+  width:100%;
+  padding-left: 0px;
+  position: relative;
+  background-image: url(https://www.cebglobal.com/blogs/files/2016/03/HTML-code-IT-applications-software-development-coding-Agile.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.home .text{
+  background-color: rgba(14, 0, 61, 0.6);
+  padding-top: 40%;
+  color:rgb(255, 153, 0);
+  padding-bottom: 40%;
+  font-family: 'Arvo', serif;
+
+}
+.home .text h1{font-size: 40px;}
+.home .text img{width: 60px;}
+.projects{
+  margin:auto;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 60px;
+background-color: rgba(233, 212, 190, 0.5);
+}
+.projects .row1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.61);
+}
+.projects .row1 .left{
+  padding-right: 10px;
+  margin-right: 2%;
+  width:45%;
+  display: flex;
+  flex-direction: row;
+  color:rgb(129, 129, 129);
+}
+.left img{
+  max-width: 250px;
+  max-height: 250px;
+}
+.left p{
+font-size: 20px;
+
+}
+
+.info{
+  width:100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(254, 183, 0);
+  padding-top: 60px;
+
+}
+.personal{
+  margin:auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+padding: 20px 20px 50px 20px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.personal .inside{
+  padding-left: 10px;
+  font-size: 16px;
+}
+.git{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(68, 68, 68);
+}
+.git img {
+  width:60px;
+  height:60px;
+}
+.button{
+   background-color: rgb(2, 0, 27);
+   border: 2px solid rgb(0, 0, 0);
+   border-radius: 8px;
+   color: rgb(250, 202, 0);
+   padding-left: 10px;
+   margin-left: 5%;
+   transition: background 1s, border 1s;
+}
+.button:hover{
+  background: rgb(36, 15, 117);
+  border: 2px solid rgb(10, 0, 71);
+}
+.active{
+  background-color: rgb(4, 68, 126) !important;
+}
+
+@media screen and (max-width: 1000px){
+  .left img{
+    width: 150px;
+    max-height: 150px;
+  }
+  .left p{
+  font-size: 15px;
+
+  }
+}
+@media screen and (max-width: 450px){
+  #show{
+    width:0;
+    height:0;
+    font-size: 0px;
+  }
+  .logo img{
+    width:0;
+  }
+  .logo .name p{
+    width:0;
+    height: 0;
+    font-size: 0;
+  }
+  .content{
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects .row1{
+    flex-direction: column;
+  }
+  .projects .row1 .left{
+    width:100%;
+  }
+  .left img{
+    width: 150px;
+    max-height: 150px;
+  }
+  .left p{
+  font-size: 15px;
+
+  }
+  .personal {
+    flex-wrap: wrap;
+  }
+}
